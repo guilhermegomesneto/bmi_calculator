@@ -1,23 +1,50 @@
 :root {
-    --color-1: #f9f5fa;
+    --color-1: #f6f6f7;
     --color-2: #1a171a;
-    --color-3: #a6e97a;
+    --color-3: #6fd892;
     --color-4: #ee5440;
     --color-5: #9b7dff;
     --color-6: #6e72e7;
+    background-color: var(--color-1);
+    color: var(--color-2);
 }
 
-#app {
+.raiz {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: var(--color-2);
-    width: 80%;
-    margin: 1rem auto 0;
+}
+
+.noturno {
+    --color-1: #1a171a;
+    --color-2: #f6f6f7;
+    --color-3: #2a5338;
+    --color-4: #772a20;
+    --color-5: #504083;
+    --color-6: #303266;
+}
+
+.div_modo {
+    margin-right: 95vw;
+}
+
+.botao_noturno {
+    background-color: var(--color-1);
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.botao_noturno:hover {
+    cursor: pointer;
+}
+
+.imagem_modo {
+    width: 5vw;
 }
 
 .div_titulo {
     width: 24%;
-    margin: 0 auto;
+    margin: 0.25rem auto 0;
     padding-bottom: 1rem;
 }
 
@@ -51,13 +78,15 @@ form input {
     background-color: var(--color-4);
     border-radius: 4px;
     padding: 4px;
-    margin: 0 0 1rem;
+    margin: 0 auto 1rem;
+    width: 60%;
 }
 
 .botao_calcular {
     width: 20%;
     margin: 0 0 1rem 0;
     padding: 8px 0;
+    color: var(--color-2);
     background: var(--color-5);
     font-weight: bold;
     font-size: 1.25rem;

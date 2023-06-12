@@ -1,5 +1,11 @@
 <template>
-  <div>
+  <div :class="{ noturno: modoNoturno }" class="raiz">
+
+    <div class="div_modo">
+      <button class="botao_noturno" @click="ligarModoNoturno">
+        <img class="imagem_modo" :src="modoNoturno ? imagemNoturna : imagemDiurna" alt="Botão de alternar modo">
+      </button>
+    </div>
 
     <div class="div_titulo">
       <h1 class="titulo_calculadora">Calculadora de IMC</h1>
@@ -50,7 +56,27 @@ export default defineComponent({
       imc: null as number | null,
       mensagem: "" as string,
       imagem:"" ,
+      modoNoturno: false
     };
+  },
+
+  mounted() {
+    const preferenciaModo = localStorage.getItem("modoNoturno");
+    if (preferenciaModo) {
+      this.modoNoturno = JSON.parse(preferenciaModo);
+      if (this.modoNoturno) {
+        document.documentElement.classList.add("noturno");
+      }
+    }
+  },
+
+  computed: {
+    imagemDiurna() {
+      return require('@/assets/dark_mode.png');
+    },
+    imagemNoturna() {
+      return require('@/assets/light_mode.png');
+    }
   },
 
   methods: {
@@ -91,6 +117,12 @@ export default defineComponent({
         }
       }
     },
+
+    ligarModoNoturno() {
+      this.modoNoturno = !this.modoNoturno;
+      document.documentElement.classList.toggle("noturno", this.modoNoturno);
+      localStorage.setItem("modoNoturno", JSON.stringify(this.modoNoturno));
+    }
   }
 });
 </script>
