@@ -110,3 +110,91 @@ form input {
 .imagem-redimensionada {
     width: 15vw;
 }
+
+/*
+Responsividade para diferentes telas
+*/
+
+@media screen and (max-width: 480px) {
+    .imagem_modo {
+        width: 15vw;
+    }
+
+    .div_titulo {
+        width: 80%;
+    }
+    
+    .titulo_calculadora {
+        font-size: 1.75rem;
+    }
+    
+    .img_capa {
+        width: 80vw;
+    }
+
+    form input {
+        width: 15%;
+        padding: 3px 0;
+    }
+
+    .aviso {
+        width: 80%;
+    }
+
+    .botao_calcular {
+        width: 40%;
+    }
+
+    .resultado {
+        font-size: 1rem;
+    }
+    
+    .imagem-redimensionada {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 912px) {
+    .imagem_modo {
+        width: 10vw;
+    }
+
+    .div_titulo {
+        width: 45%;
+    }
+    
+    .titulo_calculadora {
+        font-size: 1.75rem;
+    }
+    
+    .img_capa {
+        width: 50vw;
+    }
+
+    form input {
+        width: 15%;
+        padding: 3px 0;
+    }
+
+    .aviso {
+        width: 80%;
+    }
+
+    .botao_calcular {
+        width: 35%;
+    }
+
+    .resultado {
+        font-size: 1.15rem;
+    }
+    
+    .imagem-redimensionada {
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 913px) and (max-width: 1679px) {
+    form input {
+        padding: 3px 0;
+    }
+}

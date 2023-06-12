@@ -26,7 +26,7 @@
       </div>
 
       <div class="aviso">
-        <p>É importante levar em consideração que o IMC por conta própria não é o suficiente para caracterizar uma pessoa como obesa ou definir algo quanto à sua saúde, já que o calculo não leva em consideração sua idade, gênero, percentual de gordura ou a prática de atividades físicas. Se você desejar uma avaliação mais completa do seu corpo, procure um profissional capacitado.</p>
+        <p>É importante levar em consideração que o IMC por conta própria não é o suficiente para caracterizar uma pessoa como obesa ou definir algo quanto à sua saúde, já que o calculo não leva em consideração sua idade, sexo, percentual de gordura ou a prática de atividades físicas. Se você desejar uma avaliação mais completa do seu corpo, procure um profissional capacitado.</p>
       </div>
 
       <div>
